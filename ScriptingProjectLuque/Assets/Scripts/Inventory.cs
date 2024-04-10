@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
         public int bullets;
         public int grenades;
         public int rockets;
-        public int fuel;
+        public float fuel;
         public Stuff(int bul, int gre, int roc)
         {
             bullets = bul;
@@ -31,12 +31,13 @@ public class Inventory : MonoBehaviour
             rockets = 1;
         }
 
-        //Creating an Instance (an Object) of the Stuff class
-        public Stuff myStuff = new Stuff(50, 5, 5);
-        public Stuff myOtherStuff = new Stuff(50, 1.5f);
+      
     
     
     }
+    //Creating an Instance (an Object) of the Stuff class
+    public Stuff myStuff = new Stuff(50, 5, 5);
+    public Stuff myOtherStuff = new Stuff(50, 1.5f);
     // Start is called before the first frame update
     void Start()
     {
